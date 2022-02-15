@@ -8,7 +8,7 @@ function getTotal($arr) {
     $total = 0.00;
     //TODO do adding here
     foreach($arr as $num){
-        $total = $total + $number;
+        $total = $total + $num;
     }
     echo $total;
     //TODO do rounding stuff here
