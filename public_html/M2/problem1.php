@@ -8,13 +8,16 @@ function processArray($arr) {
     echo "<br>Processing Array:<br><pre>" . var_export($arr, true) . "</pre>";
     echo "<br>Odds output:<br>";
     //TODO add logic here to echo out only odd values
-    $oddNum = [];
-    foreach($arr as $odd) {
-        if($i % 2 !== 0) {
-            $oddNum[] = $odd;
+    $oddNums = [];
+
+    //goes through the array
+    foreach($arr as $odd){
+        //finds 
+        if($odd % 2 !== 0){
+            $oddNums[] = $odd;
         }
     }
-    echo $oddNum;
+    echo join(", ", $oddNums);
 }
 echo "Problem 1: Odd Output<br>";
 ?>
