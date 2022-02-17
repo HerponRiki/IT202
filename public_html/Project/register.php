@@ -1,3 +1,7 @@
+<?php
+require(__DIR__ . "/../../lib/functions.php");
+?>
+
 <form onsubmit="return validate(this)" method="POST">
     <div>
         <label for="email">Email</label>
@@ -37,8 +41,16 @@
          echo "Email must not be empty";
          $hasError = true;
      }
+     //sanitize
+     $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
-     if(empty($passowrd)) {
+     //validate
+     if (!filter_var($email, FILTER_VALIDATE_EMAIL))    {
+         echo "Invalid email address";
+         $hasError = true;
+     }
+
+     if(empty($password)) {
         echo "Password must not be empty";
         $hasError = true;
      }
@@ -53,12 +65,12 @@
        $hasError = true;
      }
      
-     if(strlen($password)) {
+     if(strlen($password) < 8) {
         echo "Password too short";
         $hasError = true;
      }
      
-     if(strlen($password) > 0 && $passowrd !== $confirm) {
+     if(strlen($password) > 0 && $password !== $confirm) {
         echo "Passwords must match";
         $hasError = true;
      }
