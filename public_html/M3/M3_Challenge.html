@@ -15,10 +15,11 @@
                 //(i.e., click code may complete before the navigation changes)
                 //TODO: add code for processing the current selection 
                 //Javascript
-                document.getElementById(check()).innerHTML = window.location.href;
-                
-				updateCurrentPage();
+                if (window.ocation.href.indexOf(check()) > -1){
+                    updateCurrentPage();
+                }
                 //Note: likely you'll want to call updateCurrentPage towards the end
+                
             }, 100);
         }
     </script>
