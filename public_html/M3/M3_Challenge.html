@@ -12,29 +12,27 @@
         });
         function getCurrentSelection() {
             setInterval(() => {
-                //added this delay here as some solutions may require it to update properly 
-                //(i.e., click code may complete before the navigation changes)
+                //added this delay here as some solutions may require it to update properly (i.e., click code may complete before the navigation changes)
                 //TODO: add code for processing the current selection 
                 //Javascript
-                if(window.location.href.indexOf("login"))
+                if(window.location.href.indexOf("login")>-1)
                 {
                     updateCurrentPage("login");
                 }
-                if(window.location.href.indexOf("register"))
+                if(window.location.href.indexOf("register")>-1)
                 {
                     updateCurrentPage("register");
                 }
-                if(window.location.href.indexOf("profile"))
+                if(window.location.href.indexOf("profile")>-1)
                 {
                     updateCurrentPage("profile");
                 }
-                if(window.location.href.indexOf("logout"))
+                if(window.location.href.indexOf("logout")>-1)
                 {
                     updateCurrentPage("logout");
                 }
                 
                 //Note: likely you'll want to call updateCurrentPage towards the end
-                
             }, 100);
         }
     </script>
