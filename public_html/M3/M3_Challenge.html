@@ -11,24 +11,24 @@
             //TODO: add any extra onload processing you may need here
         });
         function getCurrentSelection() {
-            setTimeout(() => {
+            setInterval(() => {
                 //added this delay here as some solutions may require it to update properly 
                 //(i.e., click code may complete before the navigation changes)
                 //TODO: add code for processing the current selection 
                 //Javascript
-                if(window.location.href.indexOf("login")>-1)
+                if(window.location.href.indexOf("login"))
                 {
                     updateCurrentPage("login");
                 }
-                if(window.location.href.indexOf("register")>-1)
+                if(window.location.href.indexOf("register"))
                 {
                     updateCurrentPage("register");
                 }
-                if(window.location.href.indexOf("profile")>-1)
+                if(window.location.href.indexOf("profile"))
                 {
                     updateCurrentPage("profile");
                 }
-                if(window.location.href.indexOf("logout")>-1)
+                if(window.location.href.indexOf("logout"))
                 {
                     updateCurrentPage("logout");
                 }
