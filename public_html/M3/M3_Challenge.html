@@ -11,10 +11,12 @@
         });
         function getCurrentSelection() {
             setTimeout(() => {
-                //added this delay here as some solutions may require it to update properly (i.e., click code may complete before the navigation changes)
+                //added this delay here as some solutions may require it to update properly 
+                //(i.e., click code may complete before the navigation changes)
                 //TODO: add code for processing the current selection 
                 //Javascript
-                
+                document.getElementById(check()).innerHTML = window.location.href;
+
 				
                 //Note: likely you'll want to call updateCurrentPage towards the end
             }, 100);
@@ -45,7 +47,7 @@
         }
         
         /*makes it go to the left side of the screen*/
-        li {
+        nav li {
         	float: left;
         }
         
