@@ -14,6 +14,7 @@
                 //added this delay here as some solutions may require it to update properly (i.e., click code may complete before the navigation changes)
                 //TODO: add code for processing the current selection 
                 //Javascript
+                
 				
                 //Note: likely you'll want to call updateCurrentPage towards the end
             }, 100);
@@ -24,21 +25,35 @@
         /*CCS here*/
         /*horizontal navigation*/
        	nav ul {
- 			list-style-type: check;
+ 			list-style-type: none;
  			margin: 0;
 			padding: 0;
         	overflow: hidden;
- 			background-color: #333;
+ 			background-color: #a64dff;
+            /*Capitalize the words at the top*/
+            text-transform: capitalize;
 		}
+        
+        /*No bullet points*/
+        ul { 
+        	list-style: none; 
+        }
+        
+        /*Checkmarks*/
+        ul li::before {
+        	content:"✓"; 
+        }
         
         /*makes it go to the left side of the screen*/
         li {
         	float: left;
         }
         
-        /*Makes the navigation bar*/
+        /*Makes the navigation bar look nice*/
         li a {
+        	/*makes it have a border kinda thing around it*/
         	display: block;
+            font-weight: bold;
             color: white;
   			text-align: center;
   			padding: 14px 16px;
@@ -47,8 +62,9 @@
         
         /*Changes color when you hover over it*/
         li a:hover {
-  			background-color: #111;
+  			background-color: #d9adfa;
 		}
+
         
     </style>
     <!-- make the necessary edits above this line -->
