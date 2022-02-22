@@ -1,5 +1,5 @@
 <?php
-require(__DIR__ . "/../../lib/functions.php");
+require(__DIR__ . "/../../partials/nav.php");
 ?>
 
 <form onsubmit="return validate(this)" method="POST">
@@ -21,6 +21,7 @@ require(__DIR__ . "/../../lib/functions.php");
     function validate(form) {
         //TODO 1: implement JavaScript validation
         //ensure it returns false for an error and true for success
+
         
 
         return true;
@@ -75,10 +76,21 @@ require(__DIR__ . "/../../lib/functions.php");
         $hasError = true;
      }
      
-     if(!$hasError) {
+     if (!$hasError) {
+        //TODO 4
         echo "Welcome, $email";
-     }
-
+        $hash = password_hash($password, PASSWORD_BCRYPT);
+        $db = getDB();
+        $stmt = $db->prepare("INSERT INTO Users (email, password) VALUES(:email, :password)");
+        try {
+            $stmt->execute([":email" => $email, ":password" => $hash]);
+            echo "Successfully registered!";
+        } catch (Exception $e) {
+            echo "There was a problem registering";
+            echo "<pre>" . var_export($e, true) . "</pre>";
+        }
+    }
+}
      //to test is it php -S localhost:3000 -t public_html
- }
+     //website is http://localhost:3000/Project/register.php
 ?>
