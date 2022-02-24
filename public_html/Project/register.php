@@ -1,7 +1,6 @@
 <?php
 require(__DIR__ . "/../../partials/nav.php");
 ?>
-
 <form onsubmit="return validate(this)" method="POST">
     <div>
         <label for="email">Email</label>
@@ -22,63 +21,54 @@ require(__DIR__ . "/../../partials/nav.php");
         //TODO 1: implement JavaScript validation
         //ensure it returns false for an error and true for success
 
-        
-
         return true;
     }
 </script>
 <?php
- //TODO 2: add PHP Code
- //empty is for php and checks if place is empty
- if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm"])) {
-     //get the email key from $_POST, default to "" if not set, and return the value
-     $email = se($_POST, "email", "", false);
-     //smae as above but for password and confirming password
-     $password = se($_POST, "password", "", false);
-     $confirm = se($_POST, "confirm", "", false);
- //TODO 3: validate/use
- $hasError = false;
-     if(empty($email)) {
-         echo "Email must not be empty";
-         $hasError = true;
-     }
-     //sanitize
-     $email = filter_var($email, FILTER_SANITIZE_EMAIL);
-
-     //validate
-     if (!filter_var($email, FILTER_VALIDATE_EMAIL))    {
-         echo "Invalid email address";
-         $hasError = true;
-     }
-
-     if(empty($password)) {
-        echo "Password must not be empty";
+//TODO 2: add PHP Code
+if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm"])) {
+    $email = se($_POST, "email", "", false);
+    $password = se($_POST, "password", "", false);
+    $confirm = se(
+        $_POST,
+        "confirm",
+        "",
+        false
+    );
+    //TODO 3
+    $hasError = false;
+    if (empty($email)) {
+        echo "Email must not be empty";
         $hasError = true;
-     }
-
-     if(empty($email)) {
+    }
+    //sanitize
+    $email = sanitize_email($email);
+    //validate
+    if (!is_valid_email($email)) {
+        echo "Invalid email address";
+        $hasError = true;
+    }
+    if (empty($password)) {
+        echo "password must not be empty";
+        $hasError = true;
+    }
+    if (empty($confirm)) {
         echo "Confirm password must not be empty";
         $hasError = true;
-     }
-
-     if(empty($email)) {
-       echo "Email must not be empty";
-       $hasError = true;
-     }
-     
-     if(strlen($password) < 8) {
+    }
+    if (strlen($password) < 8) {
         echo "Password too short";
         $hasError = true;
-     }
-     
-     if(strlen($password) > 0 && $password !== $confirm) {
+    }
+    if (
+        strlen($password) > 0 && $password !== $confirm
+    ) {
         echo "Passwords must match";
         $hasError = true;
-     }
-     
-     if (!$hasError) {
-        //TODO 4
+    }
+    if (!$hasError) {
         echo "Welcome, $email";
+        //TODO 4
         $hash = password_hash($password, PASSWORD_BCRYPT);
         $db = getDB();
         $stmt = $db->prepare("INSERT INTO Users (email, password) VALUES(:email, :password)");
@@ -87,10 +77,8 @@ require(__DIR__ . "/../../partials/nav.php");
             echo "Successfully registered!";
         } catch (Exception $e) {
             echo "There was a problem registering";
-            echo "<pre>" . var_export($e, true) . "</pre>";
+            "<pre>" . var_export($e, true) . "</pre>";
         }
     }
 }
-     //to test is it php -S localhost:3000 -t public_html
-     //website is http://localhost:3000/Project/register.php
 ?>

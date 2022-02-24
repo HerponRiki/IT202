@@ -1,12 +1,15 @@
 <?php
-require(__DIR__."/../../partials/nav.php");
+require(__DIR__ . "/../../partials/nav.php");
 ?>
 <h1>Home</h1>
 <?php
-if(isset($_SESSION["user"]) && isset($_SESSION["user"]["email"])){
- echo "Welcome, " . $_SESSION["user"]["email"]; 
+//to test is it php -S localhost:3000 -t public_html
+//website is http://localhost:3000/Project/register.php
+if (is_logged_in()) {
+    echo "Welcome, " . get_user_email();
+} else {
+    echo "You're not logged in";
 }
-else{
-  echo "You're not logged in";
-}
+//shows session info
+echo "<pre>" . var_export($_SESSION, true) . "</pre>";
 ?>
