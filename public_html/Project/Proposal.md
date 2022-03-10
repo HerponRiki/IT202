@@ -1,8 +1,8 @@
 # Project Name: Simple Arcade
 ## Project Summary:  This project will create a simple Arcade with scoreboards and competitions based on the implemented game.
-## Github Link: (Prod Branch of Project Folder)
+## Github Link: [https://github.com/HerponRiki/IT202/tree/Prod/public_html/Project] (https://github.com/HerponRiki/IT202/tree/Prod/public_html/Project)
 ## Project Board Link: 
-## Website Link: (Heroku Prod of Project folder)
+## Website Link: https://ay43-prod.herokuapp.com/Project
 ## Your Name: Ashley Yang
 
 <!-- Line item / Feature template (use this for each bullet point) -- DO NOT DELETE THIS SECTION
@@ -18,23 +18,23 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 
-    - [ ] \(mm/dd/yyyy of completion) User will be able to register a new account
+    - [x] \(mm/dd/yyyy of completion) User will be able to register a new account
      -  Link to related .md file: [Link Name](link url)  
-    - [ ] \(mm/dd/yyyy of completion) User will be able to login to their account (given they enter the correct credentials)
+    - [x] \(mm/dd/yyyy of completion) User will be able to login to their account (given they enter the correct credentials)
       -  Link to related .md file: [Link Name](link url)  
-    - [ ] \(mm/dd/yyyy of completion) User will be able to logout
+    - [x] \(mm/dd/yyyy of completion) User will be able to logout
       -  Link to related .md file: [Link Name](link url)  
-    - [ ] \(mm/dd/yyyy of completion) Basic security rules implemented
+    - [x] \(mm/dd/yyyy of completion) Basic security rules implemented
       -  Link to related .md file: [Link Name](link url)  
-    - [ ] \(mm/dd/yyyy of completion) Basic Roles implemented
+    - [x] \(mm/dd/yyyy of completion) Basic Roles implemented
       -  Link to related .md file: [Link Name](link url)  
-    - [ ] \(mm/dd/yyyy of completion) Site should have basic styles/theme applied; everything should be styled
+    - [x] \(mm/dd/yyyy of completion) Site should have basic styles/theme applied; everything should be styled
       -  Link to related .md file: [Link Name](link url)  
-    - [ ] \(mm/dd/yyyy of completion) Any output messages/errors should be “user friendly”
+    - [x] \(mm/dd/yyyy of completion) Any output messages/errors should be “user friendly”
       -  Link to related .md file: [Link Name](link url)  
-    - [ ] \(mm/dd/yyyy of completion) User will be able to see their profile
+    - [x] \(mm/dd/yyyy of completion) User will be able to see their profile
       -  Link to related .md file: [Link Name](link url)  
-    - [ ] \(mm/dd/yyyy of completion) User will be able to edit their profile
+    - [x] \(mm/dd/yyyy of completion) User will be able to edit their profile
       -  Link to related .md file: [Link Name](link url)  
   
 - Milestone 2
