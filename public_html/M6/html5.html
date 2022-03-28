@@ -164,6 +164,8 @@ function draw() {
     if (enemy.x < 0) {
       gameOver = true;
     }
+
+    //changes the color of the enemy every time the score is divisible by 2git 
     context.fillStyle = '#00FF00';
     if (score % 2 === 0) {
         context.fillStyle = '#' + randomColor2;
@@ -218,6 +220,7 @@ function draw() {
     });
 
     //my edit
+    //makes YEET
     if (score % 3 === 0) {
         context.fillStyle = '#' + randomColor1;
         context.font = '24px Georgia';
@@ -230,7 +233,6 @@ function draw() {
       shooting = false;
     }
     // Draw the bullet
-
     bullet.draw();
   }
   // Draw the score
