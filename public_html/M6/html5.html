@@ -7,6 +7,11 @@ var canvas = document.getElementById('canvas');
 // Get the canvas drawing context
 var context = canvas.getContext('2d');
 
+var randomColor = Math.floor(Math.random()*16777215).toString(16);
+var randomColor1 = Math.floor(Math.random()*16777215).toString(16);
+var randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+
+
 // Create an object representing a square on the canvas
 function makeSquare(x, y, length, speed) {
   return {
@@ -37,7 +42,7 @@ var bullet = makeSquare(0, 0, 10, 10);
 var enemies = [];
 
 // Add an enemy object to the array
-var enemyBaseSpeed = 2;
+var enemyBaseSpeed = 1.5;
 function makeEnemy() {
   var enemyX = canvas.width;
   var enemySize = Math.round((Math.random() * 15)) + 15;
@@ -111,10 +116,10 @@ function endGame() {
 // Listen for keydown events
 canvas.addEventListener('keydown', function(event) {
   event.preventDefault();
-  if (event.keyCode === 38) { // UP
+  if (event.keyCode === 38 || event.keyCode === 87) { // UP
     up = true;
   }
-  if (event.keyCode === 40) { // DOWN
+  if (event.keyCode === 40 || event.keyCode === 83)  { // DOWN
     down = true;
   }
   if (event.keyCode === 32) { // SPACE
@@ -122,13 +127,14 @@ canvas.addEventListener('keydown', function(event) {
   }
 });
 
+
 // Listen for keyup events
 canvas.addEventListener('keyup', function(event) {
   event.preventDefault();
-  if (event.keyCode === 38) { // UP 
+  if (event.keyCode === 38 || event.keyCode === 87) { // UP 
     up = false;
   }
-  if (event.keyCode === 40) { // DOWN
+  if (event.keyCode === 40 || event.keyCode === 83) { // DOWN
     down = false;
   }
 });
@@ -159,6 +165,9 @@ function draw() {
       gameOver = true;
     }
     context.fillStyle = '#00FF00';
+    if (score % 2 === 0) {
+        context.fillStyle = '#' + randomColor2;
+    }
     enemy.draw();
   });
   // Collide the ship with enemies
@@ -182,8 +191,10 @@ function draw() {
     ship.y = canvas.height - ship.l;
   }
   // Draw the ship
-  context.fillStyle = '#FF0000';
+  //Get a random color
+  context.fillStyle = '#' + randomColor;
   ship.draw();
+
   // Move and draw the bullet
   if (shooting) {
     // Move the bullet
@@ -202,14 +213,24 @@ function draw() {
         } else if (score % 5 === 0) {
           enemyBaseSpeed += 1;
         }
+
       }
     });
+
+    //my edit
+    if (score % 3 === 0) {
+        context.fillStyle = '#' + randomColor1;
+        context.font = '24px Georgia';
+        context.textAlign = 'center';
+        context.fillText('YEET', canvas.width / 2, canvas.height / 2);
+    }
+
     // Collide with the wall
     if (bullet.x > canvas.width) {
       shooting = false;
     }
     // Draw the bullet
-    context.fillStyle = '#0000FF';
+
     bullet.draw();
   }
   // Draw the score
