@@ -18,34 +18,34 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 
-    - [x] \(mm/dd/yyyy of completion) User will be able to register a new account
+    - [x] \(02/22/2022) User will be able to register a new account
      - [Milestone 1](https://github.com/HerponRiki/IT202/blob/Milestone1/public_html/Project/milestone1.md)
      - [Web link](https://ay43-prod.herokuapp.com/Project/register.php)
-    - [x] \(mm/dd/yyyy of completion) User will be able to login to their account (given they enter the correct credentials)
+    - [x] \(02/22/2022) User will be able to login to their account (given they enter the correct credentials)
       - [Milestone 1](https://github.com/HerponRiki/IT202/blob/Milestone1/public_html/Project/milestone1.md)  
       - [Web link](https://ay43-prod.herokuapp.com/Project/login.php)
-    - [x] \(mm/dd/yyyy of completion) User will be able to logout
+    - [x] \(02/22/2022) User will be able to logout
       - [Milestone 1](https://github.com/HerponRiki/IT202/blob/Milestone1/public_html/Project/milestone1.md)  
       - [Web link](https://ay43-prod.herokuapp.com/Project/logout.php)
-    - [x] \(mm/dd/yyyy of completion) Basic security rules implemented
+    - [x] \(02/22/2022) Basic security rules implemented
       - [Milestone 1](https://github.com/HerponRiki/IT202/blob/Milestone1/public_html/Project/milestone1.md)
       - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php)  
-    - [x] \(mm/dd/yyyy of completion) Basic Roles implemented
+    - [x] \(03/01/2022) Basic Roles implemented
       - [Milestone 1](https://github.com/HerponRiki/IT202/blob/Milestone1/public_html/Project/milestone1.md) 
       - [Web link](https://ay43-prod.herokuapp.com/Project/admin/admin/create_role.php) 
-    - [x] \(mm/dd/yyyy of completion) Site should have basic styles/theme applied; everything should be styled
+    - [x] \(03/01/2022) Site should have basic styles/theme applied; everything should be styled
       - [Milestone 1](https://github.com/HerponRiki/IT202/blob/Milestone1/public_html/Project/milestone1.md)  
       - [Web link](https://ay43-prod.herokuapp.com/Project/home.php)
       - [Style Sheet](https://ay43-prod.herokuapp.com/Project/style.css)
-    - [x] \(mm/dd/yyyy of completion) Any output messages/errors should be “user friendly”
+    - [x] \(03/01/2022) Any output messages/errors should be “user friendly”
       - [Milestone 1](https://github.com/HerponRiki/IT202/blob/Milestone1/public_html/Project/milestone1.md) 
       - [Web link](https://ay43-prod.herokuapp.com/Project/logout.php) 
-    - [x] \(mm/dd/yyyy of completion) User will be able to see their profile
+    - [x] \(03/03/2022) User will be able to see their profile
       - [Milestone 1](https://github.com/HerponRiki/IT202/blob/Milestone1/public_html/Project/milestone1.md) 
       - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php) 
-    - [x] \(mm/dd/yyyy of completion) User will be able to edit their profile
+    - [x] \(03/03/2022) User will be able to edit their profile
       - [Milestone 1](https://github.com/HerponRiki/IT202/blob/Milestone1/public_html/Project/milestone1.md) 
-      - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php) 
+      - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php) gi
   
 - Milestone 2
   - (duplicate template here for Milestone 1 features)
