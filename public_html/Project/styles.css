@@ -11,13 +11,21 @@
 }
 
 .alert-info {
-    background-color: teal;
+    background-color: rgb(89,131,146);
 }
-nav li{display: inline; background-color: rebeccapurple;}
-nav li a{color: hotpink}
-input{border-radius: 50%;}
+/*The headers*/
+nav li {
+    display: inline; 
+    background-color: rgba(102, 127, 83, 75);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(31, 4, 25);
+}
+
+nav li a{color: rgb(31, 4, 25)}
+input{border-radius: 5%;}
 body{
-    background-color: hotpink;
-    color: rgb(153, 0, 153);
+    background-color: rgb(229, 242, 201);
+    color: rgb(31, 4, 25);
+    font-family: "Lucida Console", "Courier New", monospace;
 
 }
