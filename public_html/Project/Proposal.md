@@ -48,7 +48,17 @@
       - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php) gi
   
 - Milestone 2
-  - (duplicate template here for Milestone 1 features)
+  - [ ] \(mm/dd/yyyy of completion) Pick a simple game to implement
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) The system will save the user’s score at the end of the game only if the user is logged in
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) The user will be able to see their last 10 scores
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) Create function(s) that output the following scoreboards
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) Create a Homepage (index.php)
+  -  Link to related .md file: [Link Name](link url)
+
 - Milestone 3
   - (duplicate template here for Milestone 1 features)
 - Milestone 4
