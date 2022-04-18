@@ -23,8 +23,10 @@ require(__DIR__ . "/../../partials/nav.php");
         const email = form.email.value;
         const password = form.password.value;
         if (email.indexOf("@") > -1) {
-            flash("Invalid email", "danger");
-            isValid = false;
+            if(!isValidEmail(email)){
+                flash("Invalid email", "danger");
+                isValid = false;
+            }
         }
 
         else {
