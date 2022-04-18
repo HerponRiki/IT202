@@ -21,10 +21,9 @@ function isValidUsername(username){
 }
 
 function isValidEmail(email){
-    //gave it a try but don't want to mess anything up
     
-    //const checkEmail = trim($email);
-    //return checkEmail.test(email);
+    const checkEmail =/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
+    return checkEmail.test(email);
 }
 
 function isValidPassword(password) {
