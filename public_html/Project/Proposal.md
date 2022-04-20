@@ -48,17 +48,22 @@
       - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php) gi
   
 - Milestone 2
-  - [x] \(04/19/2022) Pick a simple game to implement
-  -  Link to related .md file: [Link Name](link url)
-  - [ ] \(4/20/2022) The system will save the user’s score at the end of the game only if the user is logged in
-  -  Link to related .md file: [Link Name](link url)
-  - [ ] \(4/20/2022) The user will be able to see their last 10 scores
-  -  Link to related .md file: [Link Name](link url)
-  - [ ] \(4/20/2022) Create function(s) that output the following scoreboards
-  -  Link to related .md file: [Link Name](link url)
-  - [ ] \(4/20/2022) Create a Homepage (index.php)
-  -  Link to related .md file: [Link Name](link url)
-
+  - [x] \(04/18/2022) Pick a simple game to implement
+    - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/register.php)
+  - [x] \(4/19/2022) The system will save the user’s score at the end of the game only if the user is logged in
+    - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/register.php)
+  - [x] \(4/19/2022) The user will be able to see their last 10 scores
+    - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php)
+  - [x] \(4/19/2022) Create function(s) that output the following scoreboards
+    - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/home.php)
+  - [x] \(4/19/2022) Create a Homepage (index.php)
+    - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/home.php)
+    
 - Milestone 3
   - (duplicate template here for Milestone 1 features)
 - Milestone 4
