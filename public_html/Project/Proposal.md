@@ -63,9 +63,27 @@
   - [x] \(4/19/2022) Create a Homepage (index.php)
     - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
     - [Web link](https://ay43-prod.herokuapp.com/Project/home.php)
-    
+
 - Milestone 3
-  - (duplicate template here for Milestone 1 features)
+  - [ ] \(mm/dd/yyyy of completion) Users will have credits associated with their account.
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) Create a CreditsHistory table
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) Competitions table should have the following columns
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) User will be able to create a competition
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) Each new participant causes the Reward value to increase by 50% of the joining fee rounded up (i.e., at least 1)
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) Have a page where the User can see active competitions (not expired)
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) Will need an association table CompetitionParticipants
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) User can join active competitions
+  -  Link to related .md file: [Link Name](link url)
+  - [ ] \(mm/dd/yyyy of completion) Create function that calculates competition winners (clearly comment each step in the code)
+  -  Link to related .md file: [Link Name](link url)
+  
 - Milestone 4
   - (duplicate template here for Milestone 1 features)
   - 
