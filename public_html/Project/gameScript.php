@@ -108,6 +108,26 @@ function startGame() {
 function endGame() {
 	// Stop the spawn interval
   clearInterval(timeoutId);
+
+  //canvas.addEventListener("click", () => {
+  //  window.location.reload();
+  //})
+  //records and saves the score 
+  postData({
+  score: score,
+  }, "/Project/save_score.php").then(data => {
+  console.log(data);
+  //quick, brief example (you wouldn't want to use alert)
+    if (data.status === 200) {
+  //saved successfully
+      alert("Score Saved!");
+  } else {
+  //some error occurred, maybe want to handle it before resetting
+      alert("Error: Score was not saved");
+    }
+  })
+
+
   // Show the final score
   erase();
   context.fillStyle = '#000000';
@@ -333,27 +353,5 @@ if (example === 1) {
 
 
 }
-
-while (true) {
-  //save standalone mode score (not used in my project)
-  postData({
-  score: gameEnd().score,
-  }, "/Project/api/save_score.php").then(data => {
-  console.log(data);
-  //quick, brief example (you wouldn't want to use alert)
-    if (data.status === 200) {
-  //saved successfully
-      alert("Score Saved!");
-  } else {
-  //some error occurred, maybe want to handle it before resetting
-      alert("Error: Score was not saved");
-    }
-  })
-
-  canvas.addEventListener("click", () => {
-    window.location.reload();
-  })
-}
-
 
 </script>
