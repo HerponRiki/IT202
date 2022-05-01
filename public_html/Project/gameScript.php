@@ -1,7 +1,13 @@
 <?php
 require(__DIR__ . "/../../partials/nav.php");
 ?>
-<canvas id="canvas" width="600" height="400" tabindex="1"></canvas>
+
+<div class = "container-fluid w-100" >
+  <div class = "mx-auto text-center">
+    <canvas class="mx-auto" id="canvas" width="600 " height="400" tabindex="1"> </canvas>
+  </div>
+</div>
+
 <script>
 // Arcade Shooter game
 

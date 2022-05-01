@@ -92,11 +92,13 @@ if (isset($_POST["save"])) {
 <?php
 $email = get_user_email();
 $username = get_username();
+$credits = get_credits(get_user_id());
 ?>
 <div class="container-fluid">
     <h1>Profile</h1>
     <div>
         Best Score: <?php echo get_best_score(get_user_id()); ?>
+        Credits: <?php echo $credits; ?>
     </div>
     <div>
         <?php
