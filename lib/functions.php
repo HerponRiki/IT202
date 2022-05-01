@@ -24,4 +24,10 @@ require(__DIR__ . "/reset_session.php");
 require(__DIR__ . "/get_url.php");
 
 require(__DIR__ . "/score_helpers.php");
+
+//gets credits
+require(__DIR__ . "/get_credits.php");
+
+//refreshs account balance
+require(__DIR__ . "/refresh_account_balance.php");
 ?>

@@ -24,6 +24,13 @@ function save_score($score)
         $stmt = $db->prepare("INSERT INTO Scores(score, user_id) VALUES (:s, :uid)");
         try {
             $stmt->execute([":s" => $score, ":uid" => get_user_id()]);
+            //give credits
+            if($score >= 3){
+                $credits = floor($score / 3);
+                change_credits($credits, "game-reward", get_user_id(), 
+                "You got more than 3 points! Here is your reward.");
+            }
+
             $response["status"] = 200;
             $response["message"] = "Saved Score";
             http_response_code(200);
