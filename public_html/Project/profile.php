@@ -97,9 +97,10 @@ $credits = get_credits(get_user_id());
 <div class="container-fluid">
     <h1>Profile</h1>
     <div>
-        Best Score: <?php echo get_best_score(get_user_id()); ?>
-        Credits: <?php echo $credits; ?>
+        <p>Best Score: <?php echo get_best_score(get_user_id()); ?> </p>
+        <p>Credits: <?php echo $credits; ?></p>
     </div>
+
     <div>
         <?php
         $duration = "latest";

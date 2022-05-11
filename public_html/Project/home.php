@@ -5,6 +5,7 @@ require(__DIR__ . "/../../partials/nav.php");
     <h1>Home</h1>
     <p style = "text-align:center; font-size:160%; font-family:courier;"> 
     Welcome to Simple Shooter! Shoot the enemy blocks and aim for the top of the leaderboard! <br>
+    When you get three points, you get credits!<br>
     Press <b>SPACE</b> to shoot <br>
     To move up, press the <b>W or UP ARROW</b> key <br>
     To move down, press the <b>S or DOWN ARROW</b> key<br>
