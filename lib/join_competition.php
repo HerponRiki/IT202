@@ -3,8 +3,6 @@ function join_competition($comp_id, $user_id, $cost)
 {
     $balance = get_credits($user_id);
     if ($comp_id > 0) {
-        //debug
-        error_log("Balance $balance Cost $cost");
 
         if ($balance >= $cost) {
             $db = getDB();
@@ -13,13 +11,10 @@ function join_competition($comp_id, $user_id, $cost)
                 $stmt->execute([":id" => $comp_id]);
                 $r = $stmt->fetch(PDO::FETCH_ASSOC);
                 if ($r) {
-                    //debug
-                    error_log("Balance $balance Cost $cost");
-
                     $cost = (int)se($r, "join_fee", 0, false);
                     $name = se($r, "title", "", false);
                     if ($balance >= $cost) {
-                        if ($cost == 0 || change_credits($cost, "join-comp", get_user_id(), "Joining competition $name")) {
+                        if ($cost == 0 || change_credits(-$cost, "join-comp", get_user_id(), "Joining competition $name")) {
                             if (add_to_competition($comp_id, $user_id)) {
                                 flash("Successfully joined $name", "success");
                             }

@@ -30,7 +30,7 @@ if (isset($_POST["title"]) && !empty($_POST["title"])) {
             return;
         } 
 
-        if (change_credits($cost, "create_comp", get_user_id(), "Create Competition $title")) {
+        if (change_credits(-$cost, "create_comp", get_user_id(), "Create Competition $title")) {
             $_POST["created_by"] = get_user_id();
             $comp_id = save_data("Comps", $_POST);
             if ($comp_id > 0) {
@@ -93,7 +93,7 @@ if (isset($_POST["title"]) && !empty($_POST["title"])) {
     </form>
     <script>
         function updateCost() {
-            let starting = parseInt(document.getElementById("reward").value || 0) + 1;
+            let starting = parseInt(document.getElementById("credits").value || 0) + 1;
             let join = parseInt(document.getElementById("jc").value || 0);
             if (join < 0) {
                 join = 1;

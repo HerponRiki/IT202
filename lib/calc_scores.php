@@ -67,7 +67,7 @@ function calc_winners()
     }
     //closing calced comps
     if (count($calced_comps) > 0) {
-        $query = "UPDATE BGD_Competitions set did_calc = 1, did_payout = 1 WHERE id in ";
+        $query = "UPDATE Comps set did_calc = 1, did_payout = 1 WHERE id in ";
         $query = "(" . str_repeat("?,", count($calced_comps) - 1) . "?)";
         error_log("Close query: $query");
         $stmt = $db->prepare($query);
@@ -82,7 +82,7 @@ function calc_winners()
         error_log("No competitions to calc");
     }
     //close invalid comps
-    $stmt = $db->prepare("UPDATE BGD_Competitions set did_calc = 1 WHERE expires <= CURRENT_TIMESTAMP() AND current_participants < min_participants AND did_calc = 0");
+    $stmt = $db->prepare("UPDATE  set did_calc = 1 WHERE expires <= CURRENT_TIMESTAMP() AND current_participants < min_participants AND did_calc = 0");
     try {
         $stmt->execute();
         $rows = $stmt->rowCount();
