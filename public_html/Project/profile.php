@@ -161,10 +161,7 @@ $credits = get_credits(get_user_id());
 ?>
 <div class="container-fluid">
     <h1>Profile</h1>
-    <div>
-        <p>Best Score: <?php echo get_best_score(get_user_id()); ?> </p>
-        <p>Credits: <?php echo $credits; ?></p>
-    </div>
+
     <?php if ($isMe && $isEdit) : ?>
         <?php if ($isMe) : ?>
             <a href="<?php echo get_url("profile.php"); ?>">View</a>
@@ -213,6 +210,11 @@ $credits = get_credits(get_user_id());
             <div>
                 Best Score: <?php echo get_best_score($user_id); ?>
             </div>
+
+            <div>
+                Credits: <?php echo $credits; ?>
+            </div>
+
             <div>
                 Joined: <?php se($joined); ?>
             </div>
