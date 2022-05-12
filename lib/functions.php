@@ -44,6 +44,4 @@ require(__DIR__ . "/calc_scores.php");
 require(__DIR__ . "/join_competition.php");
 
 require(__DIR__ . "/save_data.php");
-
-require(__DIR__ . "/profile.link.php");
 ?>
