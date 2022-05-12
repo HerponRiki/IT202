@@ -15,11 +15,33 @@ require(__DIR__ . "/sanitizers.php");
 //TODO 3: User helpers
 require(__DIR__ . "/user_helpers.php");
 
-
 //duplicate email/username
 require(__DIR__ . "/duplicate_user_details.php");
 //reset session
 require(__DIR__ . "/reset_session.php");
 
 require(__DIR__ . "/get_url.php");
+
+require(__DIR__ . "/score_helpers.php");
+
+require(__DIR__ . "/redirect.php");
+//gets credits
+require(__DIR__ . "/get_credits.php");
+
+//refreshs account balance
+require(__DIR__ . "/refresh_account_balance.php");
+
+//calls the paginate files
+require(__DIR__ . "/paginate.php");
+
+//comps
+require(__DIR__ . "/add_to_comp.php");
+
+require(__DIR__ . "/get_top_scores.php");
+
+require(__DIR__ . "/calc_scores.php");
+
+require(__DIR__ . "/join_competition.php");
+
+require(__DIR__ . "/save_data.php");
 ?>
