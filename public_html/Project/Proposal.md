@@ -94,8 +94,30 @@
     - [Web link](https://ay43-prod.herokuapp.com/Project/competition_list.php)
   
 - Milestone 4
-  - (duplicate template here for Milestone 1 features)
-  - 
+  - [ ] \(05/12/2022) User can set their profile to be public or private (will need another column in Users table)
+    - [Milestone 4]
+    - [Web link]
+  - [ ] \(05/12/2022) User will be able to see their competition history
+    - [Milestone 4]
+    - [Web link]
+  - [ ] \(05/12/2022) User with the role of “admin” can edit a competition where paid_out = false
+    - [Milestone 4]
+    - [Web link]
+  - [ ] \(05/12/2022) Add pagination to the Active Competitions view
+    - [Milestone 4]
+    - [Web link]
+  - [ ] \(05/12/2022) Anywhere a username is displayed should link to that user’s profile
+    - [Milestone 4]
+    - [Web link]
+  - [ ] \(05/12/2022) Viewing an active or expired competition should show the top 10 scoreboard related to that competition
+    - [Milestone 4]
+    - [Web link]
+  - [ ] \(05/12/2022) Game should be fully implemented/completed by this point
+    - [Milestone 4]
+    - [Web link]
+  - [ ] \(05/12/2022) User’s score history will include pagination
+    - [Milestone 4]
+    - [Web link]
 ### Intructions
 #### Don't delete this
 1. Pick one project type
