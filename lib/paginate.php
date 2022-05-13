@@ -4,6 +4,8 @@
  * @param $query must have a column called "total"
  * @param array $params
  * @param int $per_page
+ * 
+ * $params = [] defines default params, adds keys as needed and pass to execute 
  */
 function paginate($query, $params = [], $per_page = 10)
 {

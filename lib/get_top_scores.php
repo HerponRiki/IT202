@@ -22,18 +22,18 @@ function get_top_scores_for_comp($comp_id, $limit = 10)
     JOIN RM_Accounts a on a.user_id = s.user_id
     WHERE c.id = :cid AND s.created BETWEEN uc.created AND c.expires
     )as t where `rank` = 1 ORDER BY score desc LIMIT :limit"); */
-    $scores = [];
+    $top = [];
     try {
         $stmt->bindValue(":cid", $comp_id, PDO::PARAM_INT);
         $stmt->bindValue(":limit", $limit, PDO::PARAM_INT);
         $stmt->execute();
         $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if ($r) {
-            $scores = $r;
+            $top = $r;
         }
     } catch (PDOException $e) {
         flash("There was a problem fetching scores, please try again later", "danger");
         error_log("List competition scores error: " . var_export($e, true));
     }
-    return $scores;
+    return $top;
 }

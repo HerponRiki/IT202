@@ -10,7 +10,8 @@ if (isset($_POST["join"])) {
     $balance = refresh_account_balance($user_id);
     join_competition($comp_id, $user_id, $cost);
 }
-$per_page = 5;
+
+$per_page = 10;
 paginate("SELECT count(1) as total FROM Comps WHERE expires > current_timestamp() AND paid_out < 1 AND did_calc < 1");
 //handle page load
 
