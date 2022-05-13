@@ -7,6 +7,7 @@ $isMe = $user_id == get_user_id();
 $isEdit = isset($_GET["edit"]);
 
 $db = getDB();
+
 ?>
 <?php
 if (isset($_POST["save"]) && $isMe && $isEdit) {
@@ -75,8 +76,13 @@ $email = get_user_email();
 $username = get_username();
 $credits = get_credits(get_user_id());
 
+//paginate after 10 scores
+$per_page = 10;
+paginate("SELECT count(1) as total from Users where id =:id LIMIT 1");
+
 $stmt = $db->prepare("SELECT id, email, username,visibility, created from Users where id = :id LIMIT 1");
 $isVisible = false;
+
 try {
     $stmt->execute([":id" => $user_id]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
