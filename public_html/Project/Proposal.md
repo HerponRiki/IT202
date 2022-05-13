@@ -1,8 +1,9 @@
 # Project Name: Simple Arcade
 ## Project Summary:  This project will create a simple Arcade with scoreboards and competitions based on the implemented game.
 ## Github Link: [https://github.com/HerponRiki/IT202/tree/Prod/public_html/Project] (https://github.com/HerponRiki/IT202/tree/Prod/public_html/Project)
-## Project Board Link: 
-## Website Link: https://ay43-prod.herokuapp.com/Project
+## Project Board Link: [https://github.com/HerponRiki/IT202/projects/1] (https://github.com/HerponRiki/IT202/projects/1)
+## Website Link: [https://ay43-prod.herokuapp.com/Project] (https://ay43-prod.herokuapp.com/Project)
+## Youtube Link: [https://youtu.be/g8Q19k18sKc] (https://youtu.be/g8Q19k18sKc)
 ## Your Name: Ashley Yang
 
 <!-- Line item / Feature template (use this for each bullet point) -- DO NOT DELETE THIS SECTION
@@ -48,12 +49,76 @@
       - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php) gi
   
 - Milestone 2
-  - (duplicate template here for Milestone 1 features)
+  - [x] \(04/18/2022) Pick a simple game to implement
+    - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/register.php)
+  - [x] \(4/19/2022) The system will save the user’s score at the end of the game only if the user is logged in
+    - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/register.php)
+  - [x] \(4/19/2022) The user will be able to see their last 10 scores
+    - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php)
+  - [x] \(4/19/2022) Create function(s) that output the following scoreboards
+    - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/home.php)
+  - [x] \(4/19/2022) Create a Homepage (index.php)
+    - [Milestone 2](https://github.com/HerponRiki/IT202/blob/Milestone2/public_html/Project/milestone2.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/home.php)
+
 - Milestone 3
-  - (duplicate template here for Milestone 1 features)
+  - [x] \(04/30/2022) Users will have credits associated with their account.
+    - [Milestone 3](https://github.com/HerponRiki/IT202/blob/Milestone3/public_html/Project/milestone3.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php)
+  - [x] \(04/30/2022) Create a CreditsHistory table
+    - [Milestone 3](https://github.com/HerponRiki/IT202/blob/Milestone3/public_html/Project/milestone3.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php)
+  - [x] \(05/11/2022) Competitions table should have the following columns
+    - [Milestone 3](https://github.com/HerponRiki/IT202/blob/Milestone3/public_html/Project/milestone3.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/create_competition.php)
+  - [x] \(05/11/2022) User will be able to create a competition
+    - [Milestone 3](https://github.com/HerponRiki/IT202/blob/Milestone3/public_html/Project/milestone3.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/create_competition.php)
+  - [x] \(05/11/2022) Each new participant causes the Reward value to increase by 50% of the joining fee rounded up (i.e., at least 1)
+    - [Milestone 3](https://github.com/HerponRiki/IT202/blob/Milestone3/public_html/Project/milestone3.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/create_competition.php)
+  - [x] \(05/11/2022) Have a page where the User can see active competitions (not expired)
+    - [Milestone 3](https://github.com/HerponRiki/IT202/blob/Milestone3/public_html/Project/milestone3.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/view_comp.php)
+  - [x] \(05/11/2022) Will need an association table CompetitionParticipants
+    - [Milestone 3](https://github.com/HerponRiki/IT202/blob/Milestone3/public_html/Project/milestone3.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/create_competition.php)
+  - [x] \(05/11/2022) User can join active competitions
+    - [Milestone 3](https://github.com/HerponRiki/IT202/blob/Milestone3/public_html/Project/milestone3.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/competition_list.php)
+  - [x] \(05/11/2022) Create function that calculates competition winners (clearly comment each step in the code)
+    - [Milestone 3](https://github.com/HerponRiki/IT202/blob/Milestone3/public_html/Project/milestone3.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/competition_list.php)
+  
 - Milestone 4
-  - (duplicate template here for Milestone 1 features)
-  - 
+  - [x] \(05/12/2022) User can set their profile to be public or private (will need another column in Users table)
+    - [Milestone 4](https://github.com/HerponRiki/IT202/blob/Milestone4/public_html/Project/milestone4.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php)
+  - [x] \(05/12/2022) User will be able to see their competition history
+    - [Milestone 4](https://github.com/HerponRiki/IT202/blob/Milestone4/public_html/Project/milestone4.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/view_comp.php)
+  - [ ] \(05/12/2022) User with the role of “admin” can edit a competition where paid_out = false
+    - [Milestone 4](https://github.com/HerponRiki/IT202/blob/Milestone4/public_html/Project/milestone4.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/admin/admin_calc.php)
+  - [x] \(05/12/2022) Add pagination to the Active Competitions view
+    - [Milestone 4](https://github.com/HerponRiki/IT202/blob/Milestone4/public_html/Project/milestone4.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/admin/admin_calc.php)
+  - [x] \(05/12/2022) Anywhere a username is displayed should link to that user’s profile
+    - [Milestone 4](https://github.com/HerponRiki/IT202/blob/Milestone4/public_html/Project/milestone4.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/home.php)
+  - [x] \(05/12/2022) Viewing an active or expired competition should show the top 10 scoreboard related to that competition
+    - [Milestone 4](https://github.com/HerponRiki/IT202/blob/Milestone4/public_html/Project/milestone4.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/view_comp.php)
+  - [x] \(05/12/2022) Game should be fully implemented/completed by this point
+    - [Milestone 4](https://github.com/HerponRiki/IT202/blob/Milestone4/public_html/Project/milestone4.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/gameScript.php)
+  - [x] \(05/12/2022) User’s score history will include pagination
+    - [Milestone 4](https://github.com/HerponRiki/IT202/blob/Milestone4/public_html/Project/milestone4.md)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php)
 ### Intructions
 #### Don't delete this
 1. Pick one project type
