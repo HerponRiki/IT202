@@ -1,8 +1,8 @@
 # Project Name: Simple Arcade
 ## Project Summary:  This project will create a simple Arcade with scoreboards and competitions based on the implemented game.
 ## Github Link: [https://github.com/HerponRiki/IT202/tree/Prod/public_html/Project] (https://github.com/HerponRiki/IT202/tree/Prod/public_html/Project)
-## Project Board Link: 
-## Website Link: https://ay43-prod.herokuapp.com/Project
+## Project Board Link: [https://github.com/HerponRiki/IT202/projects/1] (https://github.com/HerponRiki/IT202/projects/1)
+## Website Link: [https://ay43-prod.herokuapp.com/Project] (https://ay43-prod.herokuapp.com/Project)
 ## Your Name: Ashley Yang
 
 <!-- Line item / Feature template (use this for each bullet point) -- DO NOT DELETE THIS SECTION
@@ -99,7 +99,7 @@
     - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php)
   - [x] \(05/12/2022) User will be able to see their competition history
     - [Milestone 4](https://github.com/HerponRiki/IT202/blob/Milestone4/public_html/Project/milestone4.md)
-    - [Web link](https://ay43-prod.herokuapp.com/Project/profile.php)
+    - [Web link](https://ay43-prod.herokuapp.com/Project/view_comp.php)
   - [x] \(05/12/2022) User with the role of “admin” can edit a competition where paid_out = false
     - [Milestone 4](https://github.com/HerponRiki/IT202/blob/Milestone4/public_html/Project/milestone4.md)
     - [Web link](https://ay43-prod.herokuapp.com/Project/admin/admin_calc.php)
